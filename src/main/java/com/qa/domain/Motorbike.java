@@ -1,6 +1,6 @@
 package com.qa.domain;
 
-public class Motorbike extends Vehicles{
+public class Motorbike extends Vehicle{
 
     private double litresFuel;
     private int seats;
@@ -10,7 +10,7 @@ public class Motorbike extends Vehicles{
     public Motorbike() {
     }
 
-    public Motorbike(int yearMake, String model, String colour, float topSpeed, double litresFuel, int seats) {
+    public Motorbike(int yearMake, String model, String colour, double topSpeed, double litresFuel, int seats) {
         super(yearMake, model, colour, topSpeed);
         this.litresFuel = litresFuel;
         this.seats = seats;
@@ -34,7 +34,7 @@ public class Motorbike extends Vehicles{
 
     @Override
     public String toString() {
-        return "Motorbike [litresFuel=" + litresFuel + ", seats=" + seats + "]";
+        return "\nMotorbike \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: "+ getColour() + "\n Top Speed: " + getTopSpeed() + "MPH \n Fuel capacity: " + litresFuel + "L \n Seats: " + seats;
     }
 
     public String type() {

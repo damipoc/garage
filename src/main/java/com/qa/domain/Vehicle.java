@@ -1,18 +1,18 @@
 package com.qa.domain;
 
-public class Vehicles {
+public class Vehicle {
 
     private int yearMake;
     private String model;
     private String colour;
-    private float topSpeed;
+    private double topSpeed;
 
 
-    public Vehicles() {
+    public Vehicle() {
     }
 
     
-    public Vehicles(int yearMake, String model, String colour, float topSpeed) {
+    public Vehicle(int yearMake, String model, String colour, double topSpeed) {
         this.yearMake = yearMake;
         this.model = model;
         this.colour = colour;
@@ -39,18 +39,17 @@ public class Vehicles {
     public void setColour(String colour) {
         this.colour = colour;
     }
-    public float getTopSpeed() {
+    public double getTopSpeed() {
         return topSpeed;
     }
-    public void setTopSpeed(float topSpeed) {
+    public void setTopSpeed(double topSpeed) {
         this.topSpeed = topSpeed;
     }
 
 
     @Override
     public String toString() {
-        return "Garage [colour=" + colour + ", model=" + model + ", topSpeed=" + topSpeed + ", yearMake=" + yearMake
-                + "]";
+        return "Vehicle \n Year of make: " + yearMake + "\n Model: " + model + "\n Colour: "+ colour + "\n Top Speed: " + topSpeed;
     }
 
     
