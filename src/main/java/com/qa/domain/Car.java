@@ -8,8 +8,8 @@ public class Car extends Vehicle {
     public Car() {
     }
 
-    public Car(int yearMake, String model, String colour, double topSpeed, int doors, boolean manual) {
-        super(yearMake, model, colour, topSpeed);
+    public Car(String type, int yearMake, String model, String colour, double topSpeed, int doors, boolean manual) {
+        super(type, yearMake, model, colour, topSpeed);
         this.doors = doors;
         this.manual = manual;
     }
@@ -35,9 +35,4 @@ public class Car extends Vehicle {
         return "\nCar \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: " + getColour()
                 + "\n Top Speed: " + getTopSpeed() + "MPH \n Doors: " + doors + "\n Manual: " + manual;
     }
-
-    public String type() {
-        return "Car";
-    }
-
 }

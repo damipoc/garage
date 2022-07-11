@@ -7,8 +7,8 @@ public class ElectronicBike extends Vehicle {
     public ElectronicBike() {
     }
 
-    public ElectronicBike(int yearMake, String model, String colour, double topSpeed, int maxDistPerCharge) {
-        super(yearMake, model, colour, topSpeed);
+    public ElectronicBike(String type, int yearMake, String model, String colour, double topSpeed, int maxDistPerCharge) {
+        super(type, yearMake, model, colour, topSpeed);
         MaxDistPerCharge = maxDistPerCharge;
     }
 
@@ -26,9 +26,4 @@ public class ElectronicBike extends Vehicle {
                 + "\n Top Speed: " + getTopSpeed() + "MPH \n Max distance per full charge: " + MaxDistPerCharge
                 + " Miles";
     }
-
-    public String type() {
-        return "E-Bike";
-    }
-
 }

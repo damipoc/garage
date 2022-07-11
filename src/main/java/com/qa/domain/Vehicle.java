@@ -2,6 +2,7 @@ package com.qa.domain;
 
 public class Vehicle {
 
+    private String type;
     private int yearMake;
     private String model;
     private String colour;
@@ -10,11 +11,20 @@ public class Vehicle {
     public Vehicle() {
     }
 
-    public Vehicle(int yearMake, String model, String colour, double topSpeed) {
+    public Vehicle(String type, int yearMake, String model, String colour, double topSpeed) {
+        this.type = type;
         this.yearMake = yearMake;
         this.model = model;
         this.colour = colour;
         this.topSpeed = topSpeed;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getYearMake() {
