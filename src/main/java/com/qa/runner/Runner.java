@@ -27,7 +27,11 @@ public class Runner {
 
         garage.fix();
 
-        garage.removeVehicle(Audi);
+        garage.removeVehicle(BMW);
+
+        garage.print();
+
+        garage.removeAll();
 
         garage.print();
     }

@@ -29,36 +29,37 @@ public class Garage {
             int cost = 0;
             String type = v.getType();
             if (type == "Car") {
-                cost+= 500;
-                if(v.getYearMake() > 2010){
-                    cost+= 300;
+                cost += 500;
+                if (v.getYearMake() > 2010) {
+                    cost += 300;
                 }
-            }
-            else if (type == "Motorbike") {
-                if(v.getYearMake() > 2010){
-                    cost+= 150;
+            } else if (type == "Motorbike") {
+                if (v.getYearMake() > 2010) {
+                    cost += 150;
                 }
-                cost+= 300;
-            }
-            else if (type == "E-Bike") {
-                if(v.getYearMake() > 2020){
-                    cost+= 100;
+                cost += 300;
+            } else if (type == "E-Bike") {
+                if (v.getYearMake() > 2020) {
+                    cost += 100;
                 }
-                cost+= 150;
+                cost += 150;
             }
             System.out.println(v);
             System.out.println("Total cost to fix: " + cost + " Pounds");
         }
 
-
     }
+
     public void print() {
 
-        for (Vehicle vehicle : vehicles) {
-           System.out.println(vehicle); 
+        for (Vehicle v : vehicles) {
+            System.out.println(v);
         }
 
     }
-    
-    
+
+    public void removeAll() {
+        vehicles.clear();
+    }
+
 }

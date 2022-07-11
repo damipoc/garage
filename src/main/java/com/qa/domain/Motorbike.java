@@ -8,7 +8,8 @@ public class Motorbike extends Vehicle {
     public Motorbike() {
     }
 
-    public Motorbike(String type, int yearMake, String model, String colour, double topSpeed, double litresFuel, int seats) {
+    public Motorbike(String type, int yearMake, String model, String colour, double topSpeed, double litresFuel,
+            int seats) {
         super(type, yearMake, model, colour, topSpeed);
         this.litresFuel = litresFuel;
         this.seats = seats;

@@ -7,7 +7,8 @@ public class ElectronicBike extends Vehicle {
     public ElectronicBike() {
     }
 
-    public ElectronicBike(String type, int yearMake, String model, String colour, double topSpeed, int maxDistPerCharge) {
+    public ElectronicBike(String type, int yearMake, String model, String colour, double topSpeed,
+            int maxDistPerCharge) {
         super(type, yearMake, model, colour, topSpeed);
         MaxDistPerCharge = maxDistPerCharge;
     }
