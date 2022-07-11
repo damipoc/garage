@@ -31,6 +31,10 @@ public class Runner {
 
         garage.print();
 
+        garage.removeType("Motorbike");
+
+        garage.print();
+
         garage.removeAll();
 
         garage.print();

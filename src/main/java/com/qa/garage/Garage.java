@@ -50,6 +50,21 @@ public class Garage {
 
     }
 
+    public void removeType (String type) {
+        List<Vehicle> removeVehicles = new ArrayList<Vehicle>();
+
+        for (Vehicle v : vehicles) {
+            if (v.getType() == type) {
+                removeVehicles.add(v);
+            }
+        }
+
+        for (Vehicle v : removeVehicles) {
+            vehicles.remove(v);
+        }
+
+    }
+
     public void print() {
 
         for (Vehicle v : vehicles) {
