@@ -10,11 +10,9 @@ public class ElectricBikeTest {
 
     @Test
     void getMaxDistPerCharge() {
-        
+
         assertEquals(25, tryMe.getMaxDistPerCharge());
 
     }
-    
 
-    
 }
