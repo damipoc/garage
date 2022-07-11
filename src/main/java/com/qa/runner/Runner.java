@@ -15,8 +15,8 @@ public class Runner {
         Motorbike Yamaha = new Motorbike("Motorbike", 2018, "Yamaha YZF-100 R1", "Red", 178.6, 17, 1);
         Motorbike BMW = new Motorbike("Motorbike", 2009, "BMW K 1300 R", "Silver", 165.2, 19, 2);
 
-        ElectronicBike Pure = new ElectronicBike("E-Bike", 2021, "Pure Flux One", "Black", 35, 25);
-        ElectronicBike Canyon = new ElectronicBike("E-Bike", 2021, "Canyon Roadlite:On", "Silver", 25, 120);
+        ElectricBike Pure = new ElectricBike("E-Bike", 2021, "Pure Flux One", "Black", 35, 25);
+        ElectricBike Canyon = new ElectricBike("E-Bike", 2021, "Canyon Roadlite:On", "Silver", 25, 120);
 
         garage.addVehicle(Mitsubishi);
         garage.addVehicle(Audi);

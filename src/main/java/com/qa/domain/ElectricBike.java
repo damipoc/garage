@@ -1,13 +1,13 @@
 package com.qa.domain;
 
-public class ElectronicBike extends Vehicle {
+public class ElectricBike extends Vehicle {
 
     private int MaxDistPerCharge;
 
-    public ElectronicBike() {
+    public ElectricBike() {
     }
 
-    public ElectronicBike(String type, int yearMake, String model, String colour, double topSpeed,
+    public ElectricBike(String type, int yearMake, String model, String colour, double topSpeed,
             int maxDistPerCharge) {
         super(type, yearMake, model, colour, topSpeed);
         MaxDistPerCharge = maxDistPerCharge;

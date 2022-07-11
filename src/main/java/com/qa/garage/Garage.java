@@ -15,12 +15,14 @@ public class Garage {
         this.vehicles = vehicles;
     }
 
-    public void addVehicle(Vehicle vehicle) {
+    public String addVehicle(Vehicle vehicle) {
         this.vehicles.add(vehicle);
+        return "Vehicle added to the garage.";
     }
 
-    public void removeVehicle(Vehicle vehicle) {
+    public String removeVehicle(Vehicle vehicle) {
         this.vehicles.remove(vehicle);
+        return "Vehicle removed from the garage.";
     }
 
     public void fix() {
@@ -50,7 +52,7 @@ public class Garage {
 
     }
 
-    public void removeType (String type) {
+    public String removeType (String type) {
         List<Vehicle> removeVehicles = new ArrayList<Vehicle>();
 
         for (Vehicle v : vehicles) {
@@ -63,18 +65,24 @@ public class Garage {
             vehicles.remove(v);
         }
 
+        return "All " + type + "s removed from the garage.";
+
     }
 
-    public void print() {
+    public String print() {
 
         for (Vehicle v : vehicles) {
             System.out.println(v);
         }
 
+        return "A list of all vehicles in the garage.";
+
     }
 
-    public void removeAll() {
+    public String removeAll() {
         vehicles.clear();
+
+        return "Garage emptied.";
     }
 
 }
