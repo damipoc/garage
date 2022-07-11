@@ -1,6 +1,6 @@
 package com.qa.domain;
 
-public class Car extends Garage{
+public class Car extends Vehicles{
 
     private int doors;
     private boolean manual;

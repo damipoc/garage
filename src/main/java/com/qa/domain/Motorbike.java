@@ -1,6 +1,6 @@
 package com.qa.domain;
 
-public class Motorbike extends Garage{
+public class Motorbike extends Vehicles{
 
     private double litresFuel;
     private int seats;

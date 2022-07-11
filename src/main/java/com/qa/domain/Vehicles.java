@@ -1,6 +1,6 @@
 package com.qa.domain;
 
-public class Garage {
+public class Vehicles {
 
     private int yearMake;
     private String model;
@@ -8,11 +8,11 @@ public class Garage {
     private float topSpeed;
 
 
-    public Garage() {
+    public Vehicles() {
     }
 
     
-    public Garage(int yearMake, String model, String colour, float topSpeed) {
+    public Vehicles(int yearMake, String model, String colour, float topSpeed) {
         this.yearMake = yearMake;
         this.model = model;
         this.colour = colour;

@@ -1,6 +1,6 @@
 package com.qa.domain;
 
-public class ElectronicBike extends Garage{
+public class ElectronicBike extends Vehicles{
 
     private int MaxDistPerCharge;
 
