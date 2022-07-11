@@ -1,6 +1,6 @@
 package com.qa.domain;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
 
     private int doors;
     private boolean manual;
@@ -32,11 +32,12 @@ public class Car extends Vehicle{
 
     @Override
     public String toString() {
-        return "\nCar \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: "+ getColour() + "\n Top Speed: " + getTopSpeed() + "MPH \n Doors: " + doors + "\n Manual: " + manual;
+        return "\nCar \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: " + getColour()
+                + "\n Top Speed: " + getTopSpeed() + "MPH \n Doors: " + doors + "\n Manual: " + manual;
     }
 
     public String type() {
         return "Car";
     }
-    
+
 }

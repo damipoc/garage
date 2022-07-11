@@ -1,6 +1,6 @@
 package com.qa.domain;
 
-public class ElectronicBike extends Vehicle{
+public class ElectronicBike extends Vehicle {
 
     private int MaxDistPerCharge;
 
@@ -22,13 +22,13 @@ public class ElectronicBike extends Vehicle{
 
     @Override
     public String toString() {
-        return "\nE-Bike \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: "+ getColour() + "\n Top Speed: " + getTopSpeed() + "MPH \n Max distance per full charge: " + MaxDistPerCharge +" Miles";
+        return "\nE-Bike \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: " + getColour()
+                + "\n Top Speed: " + getTopSpeed() + "MPH \n Max distance per full charge: " + MaxDistPerCharge
+                + " Miles";
     }
 
     public String type() {
         return "E-Bike";
     }
 
-    
-    
 }

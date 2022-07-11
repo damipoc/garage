@@ -1,11 +1,9 @@
 package com.qa.domain;
 
-public class Motorbike extends Vehicle{
+public class Motorbike extends Vehicle {
 
     private double litresFuel;
     private int seats;
-
-    
 
     public Motorbike() {
     }
@@ -34,13 +32,12 @@ public class Motorbike extends Vehicle{
 
     @Override
     public String toString() {
-        return "\nMotorbike \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: "+ getColour() + "\n Top Speed: " + getTopSpeed() + "MPH \n Fuel capacity: " + litresFuel + "L \n Seats: " + seats;
+        return "\nMotorbike \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: " + getColour()
+                + "\n Top Speed: " + getTopSpeed() + "MPH \n Fuel capacity: " + litresFuel + "L \n Seats: " + seats;
     }
 
     public String type() {
         return "Motorbike";
     }
-    
 
-    
 }
