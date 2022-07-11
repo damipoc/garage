@@ -1,4 +1,4 @@
-package com.qa.garage;
+package com.qa.runner;
 
 public class Runner {
     
