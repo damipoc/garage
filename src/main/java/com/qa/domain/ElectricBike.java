@@ -1,3 +1,8 @@
+/**
+ * @author
+ * Damian Poclitar 
+ */
+
 package com.qa.domain;
 
 public class ElectricBike extends Vehicle {
@@ -13,14 +18,23 @@ public class ElectricBike extends Vehicle {
         MaxDistPerCharge = maxDistPerCharge;
     }
 
+    /**
+     * @return int of how many miles it can cover in a full charge
+     */
     public int getMaxDistPerCharge() {
         return MaxDistPerCharge;
     }
 
+    /**
+     * @param maxDistPerCharge how many miles it can cover in a full charge
+     */
     public void setMaxDistPerCharge(int maxDistPerCharge) {
         MaxDistPerCharge = maxDistPerCharge;
     }
 
+    /**
+     * @return String simple toString
+     */
     @Override
     public String toString() {
         return "\nE-Bike \n Year of make: " + getYearMake() + "\n Model: " + getModel() + "\n Colour: " + getColour()

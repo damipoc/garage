@@ -1,3 +1,8 @@
+/**
+ * @author
+ * Damian Poclitar 
+ */
+
 package com.qa.garage;
 
 import java.util.*;
@@ -15,11 +20,19 @@ public class Garage {
         this.vehicles = vehicles;
     }
 
+    /**
+     * @param vehicle adds the vehicle to the array list
+     * @return String confirmation of vehicle being added
+     */
     public String addVehicle(Vehicle vehicle) {
         this.vehicles.add(vehicle);
         return "Vehicle added to the garage.";
     }
 
+    /**
+     * @param vehicle removes vehicle from the array list
+     * @return String confirmation of the vehicle being removed
+     */
     public String removeVehicle(Vehicle vehicle) {
         this.vehicles.remove(vehicle);
         return "Vehicle removed from the garage.";
@@ -52,7 +65,11 @@ public class Garage {
 
     }
 
-    public String removeType (String type) {
+    /**
+     * @param type type of vehicle to remove from the array list
+     * @return String confirmation of the type being removed
+     */
+    public String removeType(String type) {
         List<Vehicle> removeVehicles = new ArrayList<Vehicle>();
 
         for (Vehicle v : vehicles) {
@@ -69,16 +86,21 @@ public class Garage {
 
     }
 
+    /**
+     * @return String confirmation of all the vehicles being returned
+     */
     public String print() {
 
         for (Vehicle v : vehicles) {
             System.out.println(v);
         }
-
         return "A list of all vehicles in the garage.";
 
     }
 
+    /**
+     * @return String confirmation of the vehicle being removed
+     */
     public String removeAll() {
         vehicles.clear();
 
